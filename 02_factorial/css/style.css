@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section1 {
+    background-color: lightgray;
+    padding: 5px;
+    border-bottom: 4px solid black;
+    height: 45vh;
+}
+
+h1 {
+    margin: 2%;
+    padding: 20px;
+    background-color: azure;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: brown;
+    box-shadow: 10px 10px 5px brown;
+    text-align: center;
+}
+
+#input {
+    margin: 0 3% 2%;
+    padding: 20px;
+    background-color: lightgrey;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: brown;
+    box-shadow: 10px 10px 5px brown;
+    text-align: center;
+}
+
+#input input {
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#input button {
+    background-color: red;
+    color: white;
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+#input button:hover {
+    background-color: green;
+    transition: 1s;
+}
+
+h2 {
+    margin: 0 2% 2%;
+    padding: 20px;
+    background-color: azure;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: brown;
+    box-shadow: 10px 10px 5px brown;
+    text-align: center;
+}
+
+h2 p {
+    font-size: 14px;
+}
+
+.section2 {
+    background-color: lightgreen;
+    padding: 10vh 30px;
+    height: 45vh;
+}
+
+.resultado {
+    position: relative;
+    left: 25%;
+    display: flex;
+    background-color: lightgrey;
+    margin: 0 2%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px brown;
+    padding: 1.8% 5%;
+    width: 50%;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.resultado:hover {
+    color: red;
+    transition: 3s;
+    rotate: 360deg;
+    border-left: none;
+    transform: scale(1.5) translate(-2%, 30%);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: right;
+    height: 10vh;
+    padding: 15px;
+    font-weight: bolder;
+}
