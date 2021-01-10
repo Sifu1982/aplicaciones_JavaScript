@@ -4,25 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Factorial de un número</title>
+    <title>Ingresar números</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <section class="section1">
-        <h1><span class="span1">Esta aplicación</span> MUESTRA el factorial del <span class="span2">número natural que
-                introduzcas</span>
+        <h1><span class="span1">Esta aplicación</span> VISUALIZA y CUENTA <span class="span2">los números que
+                introduzcas hasta que pulses 0</span>
         </h1>
         <div id="input">
-            <input id="numero" type="text" placeholder="Introduce un número natural">
-            <button id="boton">Calcular</button>
+            <input id="numero" type="text" placeholder="Introduce un número distinto de 0">
+            <button id="boton">Insertar</button>
+            <p>Cuando pulses 0 la aplicación se detiene y te muestra el resultado</p>
         </div>
     </section>
     <section class="section2">
         <h2>Aquí tienes tu resultado: <p>(encuentra la animación oculta)</p>
         </h2>
         <div class="resultado">
-            <!--  4! es 24 -->
+            <div>
+                <!-- <p>Has introducido 4 números</p> -->
+            </div>
+            <div>
+                <!-- <p>Número 1: 2</p> -->
+            </div>
         </div>
     </section>
     <footer>
@@ -32,7 +38,6 @@
 
     <script src="js/funciones.js"></script>
     <script src="js/eventos.js"></script>
-
 </body>
 
 </html>
