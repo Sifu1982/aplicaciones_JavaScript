@@ -19,6 +19,7 @@ buttonCarne.addEventListener('click', capturarBotonCarne);
 function capturarBotonCarne(event) {
     carnePescado(event.target.alt);
     resultadoCarne.innerText = total + ' euros';
+    resultadoTotal.innerText = total + ' euros';
     titulo.innerText = '¿Desea postre?';
     pintarPostre();
 
@@ -27,14 +28,13 @@ function capturarBotonCarne(event) {
 
     let botonNo = document.getElementById('no');
     botonNo.addEventListener('click', capturarBotonNo);
-
-
 };
 
 buttonPescado.addEventListener('click', capturarBotonPescado);
 function capturarBotonPescado(event) {
     carnePescado(event.target.alt);
     resultadoPescado.innerText = total + ' euros';
+    resultadoTotal.innerText = total + ' euros';
     titulo.innerText = '¿Desea postre?';
     pintarPostre();
 
