@@ -63,7 +63,7 @@ function capturarInputs(event) {
         lis[5].innerText = texto6 + 'NO coinciden';
     };
     //Texto del septimo li
-    let texto7 = 'El valor de la variable ';
+    let texto7 = 'El valor de la variable 2 ';
     let texto8 = 'está comprendido entre los valores de las variables 1 y 3';
     if (v2ComprendidoEntrev1Yv3(v1.value, v2.value, v3.value)) {
         lis[6].innerText = texto7 + texto8;
