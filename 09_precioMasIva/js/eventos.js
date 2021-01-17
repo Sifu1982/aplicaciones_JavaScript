@@ -14,7 +14,7 @@ function capturarBoton(event) {
     event.preventDefault();
     for (const input of inputs) {
         if (isNaN(input.value)) {
-            alert('Tienes que introducir el valor numérico');
+            alert('Tienes que introducir el valor numérico en un formato válido');
             input.value = '';
             input.focus();
         };
