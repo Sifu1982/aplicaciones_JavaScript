@@ -9,20 +9,20 @@ function carnePescado(pComida) {
     } else if (pComida == 'pescado') {
         const precioPescado = 15;
         total += precioPescado;
-    }
+    };
     return total;
-}
+};
 
 
 function propina() {
     let propina = total * porcentajePropina;
     return propina;
-}
+};
 
 function totalizar() {
-    total += propina()
+    total += propina();
     return total;
-}
+};
 
 let divPostre = document.querySelector('.platos');
 function pintarPostre() {
@@ -34,4 +34,4 @@ function pintarPostre() {
         <button id="no" class="button">No</button>
     </div>
 </figure>`;
-}
+};

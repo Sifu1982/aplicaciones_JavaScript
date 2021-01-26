@@ -108,3 +108,10 @@ footer {
     padding: 15px;
     font-weight: bolder;
 }
+
+footer a {
+    position: absolute;
+    left: 0px;
+    padding-left: 15px;
+    color: white;
+}

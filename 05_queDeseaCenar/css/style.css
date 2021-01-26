@@ -146,3 +146,10 @@ button {
     margin: 4%;
     width: 40%;
 }
+
+footer a {
+    position: absolute;
+    left: 0px;
+    padding-left: 15px;
+    color: white;
+}

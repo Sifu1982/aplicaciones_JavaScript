@@ -121,3 +121,10 @@ h2 p {
     bottom: 0px;
     width: 100%;
 }
+
+.footer a {
+    position: absolute;
+    left: 0px;
+    padding-left: 15px;
+    color: white;
+}

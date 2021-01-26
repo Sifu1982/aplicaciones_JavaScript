@@ -5,16 +5,24 @@ let strong = document.querySelector('strong');
 let span1 = document.querySelector('.span1');
 let span2 = document.querySelector('.span2');
 
-
+numeroCalcular.value = '';
+numeroDeMultiplos.value = '';
 numeroDeMultiplos.focus();
 
 boton.addEventListener('click', capturarBoton);
 
 function capturarBoton(event) {
+    //Condición para no continuar si el usuario introduce texto
+    if (isNaN(numeroDeMultiplos.value)) {
+        numeroDeMultiplos.placeholder = 'No puedes introducir texto';
+        numeroDeMultiplos.value = '';
+    };
+    if (isNaN(numeroCalcular.value)) {
+        numeroCalcular.placeholder = 'No puedes introducir texto';
+        numeroCalcular.value = '';
+    };
     //Condición para que no "pinte" nada si los campos de texto se encuentran vacíos
     if (numeroDeMultiplos.value == '' || numeroCalcular.value == '') {
-        divMultiplo.innerHTML = '';
-        divSumatorio.innerHTML = '';
     } else if (numeroDeMultiplos.value >= 1) {
         pintarMultiplos(calcularNPrimerosMultpiplos(numeroCalcular.value, numeroDeMultiplos.value));
         pintarSumaMultipos(sumarPosicionesArray(calcularNPrimerosMultpiplos(numeroCalcular.value, numeroDeMultiplos.value)));

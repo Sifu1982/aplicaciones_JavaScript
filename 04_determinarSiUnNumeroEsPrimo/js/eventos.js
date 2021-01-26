@@ -16,5 +16,5 @@ function capturarInput(event) {
         input.focus();
         span.innerText = 'Te voy a decir si el número que buscas';
         strong.innerText = '';
-    }
+    };
 };
