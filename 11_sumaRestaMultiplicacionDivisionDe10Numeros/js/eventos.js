@@ -1,10 +1,10 @@
-let numeroValores = document.querySelector('.titulo');
+let numeroValores = document.querySelector('#titulo');
 let input = document.querySelector('input');
 let boton = document.querySelector('a');
 let lis = document.getElementsByTagName('li');
 
 const numeroValoresIntroducidosXUsuario = 4;
-const numeroDeDecimales = 5;
+const numeroDecimales = 5;
 
 numeroValores.innerText = numeroValoresIntroducidosXUsuario;
 
@@ -36,7 +36,7 @@ function capturarBoton(event) {
 
     if (contador == numeroValoresIntroducidosXUsuario) {
         for (let i = 0; i < lis.length; i++) {
-            lis[i].innerText = `La operación ${calcular(arrayUsuario)[i + 5]} es: ${calcular(arrayUsuario)[i].toFixed(numeroDeDecimales)}`
+            lis[i].innerText = `La operación ${calcular(arrayUsuario)[i + 5]} es: ${calcular(arrayUsuario)[i].toFixed(numeroDecimales)}`
         };
         boton.innerHTML = '';
         input.parentElement.remove(input);

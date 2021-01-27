@@ -42,11 +42,13 @@ main section input {
 .resultados ul {
     display: flex;
     flex-wrap: wrap;
+    height: 62vh;
 }
 
 .resultados li {
     padding: 3%;
-    width: 4%;
+    width: 5vh;
+    height: 5vh;
     text-align: center;
     font-size: xx-large;
     transition: 1s;

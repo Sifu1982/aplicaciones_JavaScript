@@ -1,38 +1,25 @@
-function devuelveArrayStringsOrdenado(pArray) {
-    const arrayObjetos = new Array();
-    for (const elemento of pArray) {
-        let tipo = typeof (elemento);
-        //Creo cada objeto que compondrá el arrayObjetos
-        const newObject = {
-            palabra: elemento,
-            longitud: elemento.length
-        };
-        //Elijo sólo los elementos string del array original y los introduzco en un nuevo array (arrayObjetos)
+function arrayStringsOrdenado(pArray) {
+    const arrayStrings = new Array();
+    for (let i = 0; i < pArray.length; i++) {
+        //Elijo sólo los elementos que sean string del array original y los introduzco en el array (arrayStrings)
+        let tipo = typeof (pArray[i]);
         if (tipo == 'string') {
-            arrayObjetos.push(newObject);
+            arrayStrings.push(pArray[i]);
         };
     };
     //Ordeno el nuevo array alfabéticamente por contenido de palabra
-    arrayObjetos.sort((a, b) => {
-        if (a.palabra > b.palabra) {
-            return 1;
-        };
-        if (a.palabra < b.palabra) {
-            return -1;
-        };
-        return 0;
-    });
+    arrayStrings.sort();
     //Ordeno el nuevo array por longitud de palabra
-    arrayObjetos.sort((a, b) => {
-        if (b.longitud > a.longitud) {
+    arrayStrings.sort((a, b) => {
+        if (b.length > a.length) {
             return 1;
         };
-        if (b.longitud < a.longitud) {
+        if (b.length < a.length) {
             return -1;
         };
         return 0;
     });
-    return arrayObjetos;
+    return arrayStrings;
 };
 
 function calculateNumbers(pArray) {
@@ -47,6 +34,6 @@ function calculateNumbers(pArray) {
     return calcular(arrayNumbers);
 };
 
-// let arrayPrueba = ['Hola', 'Asturi', 2, 3, 'Sésamo', true, 'Candelabro'];
+let arrayPrueba = ['Holo', 'Hola', 'Asturi', 2, 3, 'Sésamo', true, 'Candelabro'];
 
 // let copiaArrayPrueba = [...arrayPrueba];
