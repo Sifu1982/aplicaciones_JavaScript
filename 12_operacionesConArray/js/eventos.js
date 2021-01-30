@@ -1,21 +1,20 @@
 let input = document.querySelector('input');
-let sectionResultados = document.querySelector('.resultados');
 let botones = document.getElementsByTagName('button');
+
 input.value = '';
 input.focus();
 
-let arrayUsuario = new Array();
+
 
 botones[0].addEventListener('click', capturarAlmacenar);
 
 function capturarAlmacenar() {
     if (input.value != '') {
-        isNaN(input.value) ? arrayUsuario.push(input.value) : arrayUsuario.push(parseInt(input.value));
+        isNaN(input.value) ? arrayUsuario.push(input.value) : arrayUsuario.push(parseFloat(input.value));
     };
-    input.placeholder = 'Introduce otro elemento del array';
+    pintarArray(arrayUsuario);
     input.value = '';
     input.focus();
-    arrayUsuario = arrayUsuario;
     return arrayUsuario;
 };
 
@@ -23,17 +22,10 @@ function capturarAlmacenar() {
 botones[1].addEventListener('click', capturarMostrarPalabras);
 
 function capturarMostrarPalabras() {
-
-
-    sectionResultados.innerHTML += '<h2>Éstas son las palabras de tu array ordenadas por tamaño(de myor a menor) y alfabéticamente:</h2><ul id="ul_01"></ul>';
-
-    let ul_01 = document.querySelector('#ul_01');
-
-    for (let i = 0; i < arrayUsuario.length; i++) {
-        if (typeof (arrayStringsOrdenado(arrayUsuario)[i]) == 'string') {
-            ul_01.innerHTML += `<li><div><h6>Palabra ${i + 1}, tiene ${arrayStringsOrdenado(arrayUsuario)[i].length} letras:</h6><p>${arrayStringsOrdenado(arrayUsuario)[i]}</p></div></li>`;
-        };
+    if (arrayUsuario.length > 0 && arrayStringsOrdenado(arrayUsuario).length > 0) {
+        pintarPalabras(arrayStringsOrdenado(arrayUsuario));
     };
+    input.focus();
 };
 
 
@@ -41,14 +33,8 @@ function capturarMostrarPalabras() {
 botones[2].addEventListener('click', capturarMostrarNumeros);
 
 function capturarMostrarNumeros() {
-
-    sectionResultados.innerHTML += '<h2>Éstas son las operaciones calculadas con los números de tu array:</h2><ul id="ul_02">';
-
-    let ul_02 = document.querySelector('#ul_02')
-
-    for (let i = 0; i < 5; i++) {
-        ul_02.innerHTML += `<li>Operación ${calculateNumbers(arrayUsuario)[i + 5]}: ${calculateNumbers(arrayUsuario)[i].toFixed(2)}</li>`
+    if (arrayUsuario.length > 0 && calculateNumbers(arrayUsuario)[0] != undefined) {
+        pintarNumeros(calculateNumbers(arrayUsuario));
     };
-
-    sectionResultados.innerHTML += '</ul>';
+    input.focus();
 };

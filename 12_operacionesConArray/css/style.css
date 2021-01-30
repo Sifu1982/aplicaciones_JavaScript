@@ -29,10 +29,6 @@ main section {
     border-radius: 10px;
 }
 
-.inputs {
-    display: flex;
-}
-
 main section input {
     text-align: center;
     width: 50%;
@@ -41,6 +37,19 @@ main section input {
     border-radius: 10px;
     background-color: black;
     color: white;
+}
+
+.inputs p {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.inputs p:hover {
+    color: darkgoldenrod;
 }
 
 .resultados {
@@ -59,28 +68,34 @@ main section input {
     text-decoration: none;
     color: lightsalmon;
     cursor: pointer;
-    transition: 2s;
+    transition: 1s;
 }
 
 .resultados button:hover {
-    background-color: lightgray;
+    background-color: rgb(46, 231, 77);
     color: black;
-    /* padding: 0 5%; */
     border-radius: 10px 20px;
     box-shadow: 5px 5px 5px blanchedalmond;
-    transition: 3s;
 }
 
-.resultados ul {
+.resultados article {
     display: flex;
     flex-wrap: wrap;
 }
 
+.resultados ul {
+    width: 33%;
+}
+
 .resultados li {
     padding: 3%;
-    width: 33.33%;
+    width: 31.33%;
     text-align: center;
     font-size: xx-large;
+    background-color: blue;
+    margin: 1%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px blanchedalmond;
 }
 
 .resultados li:hover {
