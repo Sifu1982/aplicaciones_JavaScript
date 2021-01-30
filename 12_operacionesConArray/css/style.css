@@ -83,8 +83,8 @@ main section input {
     flex-wrap: wrap;
 }
 
-.resultados ul {
-    width: 33%;
+.resultados h2 {
+    width: 100%;
 }
 
 .resultados li {

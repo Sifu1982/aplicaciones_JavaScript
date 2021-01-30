@@ -64,7 +64,7 @@ function pintarNumeros(pArray) {
 };
 
 function pintarNumero(pResultado, pOperacion) {
-    article.innerHTML += `<li>Operación ${pOperacion}: ${pResultado.toFixed(2)} </li>`
+    article.innerHTML += `<li><div>Operación ${pOperacion}: ${pResultado.toFixed(2)} </div></li>`
 };
 
 
