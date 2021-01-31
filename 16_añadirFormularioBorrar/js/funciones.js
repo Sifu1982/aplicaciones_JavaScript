@@ -34,7 +34,7 @@ function pintarProductos(pListaProductos) {
 //                                                 <p>${pProducto.precio} euros</p>
 //                                             </figcaption>
 //                                         </figure>
-//                                     </article>`
+//                                     </article>`;
 // };
 
 
@@ -76,6 +76,7 @@ function pintarProducto(pProducto) {
 
 
 function borrarProducto(pListaProductos) {
+    //shift() borra un elemento del array desde el principio
     pListaProductos.shift();
     return pListaProductos;
 };
